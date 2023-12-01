@@ -1,0 +1,4 @@
+# we cant's just say x=y and y=x, the second part won't work because we already changed x, we need to store the starting value for later
+z=x # we create variable z to store the beginning value of x
+x=y # we change the vaule of x to the beginning value of y
+y=z # we change the value of y to the beginning value of x by using z where we stored that value
