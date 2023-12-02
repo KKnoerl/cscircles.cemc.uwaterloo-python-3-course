@@ -1,0 +1,3 @@
+print(min(x,y,z)) # Finds the smallest of the three
+print(x+y+z-min(x,y,z)-max(x,y,z)) #Adds all three together, subtracts the smallest, and subtracts the largest, leaving just the middle value.
+print(max(x,y,z)) # Finds the largest of the three
