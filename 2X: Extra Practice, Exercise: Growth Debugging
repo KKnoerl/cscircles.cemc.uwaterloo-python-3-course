@@ -1,0 +1,7 @@
+populationIn2012 = 1000
+populationIn2013 = populationIn2012 * 1.1
+populationIn2014 = populationIn2013 * 1.1
+populationIn2015 = populationIn2014 * 1.1
+
+# Change all the 0.1 multipliers to 1.1
+# Using 0.1 would tell us the increase amount, but we also need to multiply by 1 to include the original population
