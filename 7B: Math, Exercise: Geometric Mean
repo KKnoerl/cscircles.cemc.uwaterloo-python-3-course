@@ -1,0 +1,4 @@
+import math             # inport the math module
+a = float(input())      # set your first variable as a float from input()
+b = float(input())      # set you second variable as a float from input()
+print(math.sqrt(a*b))   # use the math module square root # math.sqrt()
