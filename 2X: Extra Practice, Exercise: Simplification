@@ -1,0 +1,8 @@
+max(x - 3, min(x + 10, x + 5))
+
+# Question: What is the simplification of the following expression?
+# Answer: x + 5
+
+# We can read this as "What's larger, x-3 or min(x + 10, x + 5) ?
+# first lets see what the min comes out to: something with +5 is going to be smaller than with +10
+# so now we can answer what is larger x-3 or x+5 ? a number with +5 will be larger than with -3
