@@ -1,0 +1,7 @@
+x = 13
+y = 7
+a = max(x+y, x*2) # What is larger? 13+7, or 13*2
+b = min(x, y) # What is smaller? 13, or 7
+print(a,b)
+# Question: what is the output?
+# Answer: 26 7
