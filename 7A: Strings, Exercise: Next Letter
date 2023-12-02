@@ -1,0 +1,6 @@
+# ord('Z') is 90
+letter = input()               # Set your variable for input()
+if ord(letter) == 90:          # Or we can use the string character itself, python is smart # if letter == "Z":
+   print("A")
+if ord(letter) < 90:           # Or we can use the string character itslef, python is smart # if letter < "Z":
+   print(chr(ord(letter)+1))   # we need to convert letter to it's code using ord(), then +1, then convert it back to a character using chr()
