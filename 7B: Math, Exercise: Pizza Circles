@@ -1,0 +1,3 @@
+import math            # we plan on using math calculations so we need to import the math module
+r = float(input())     # set our variable to the float value of input()
+print(math.pi * r**2)  # math.pi will use pi from the math module, and ** is exponent so r**2 is the same as r squared or r^2
