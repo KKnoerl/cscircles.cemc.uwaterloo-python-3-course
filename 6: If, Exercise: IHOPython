@@ -1,0 +1,5 @@
+pancakes = int(input())     # set the variable pancakes to the int value from input()
+if pancakes > 3:            # set the if condition (greater than)
+   print("Yum!")            # result if condition is met
+if pancakes <= 3:           # set the other if condition (less than or equal to)
+   print("Still hungry!")   # result if condition is met
