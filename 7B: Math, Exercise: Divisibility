@@ -1,0 +1,6 @@
+a = int(input())            # set variable a from the first input()
+b = int(input())            # set variable b from the second input()
+if a % b == 0:              # we are using modulus to see if there's any remaider after division, if not modulus will be 0
+   print("divisible")       # set the result for the condition
+if a % b > 0:               # we are using modulus to see if there's any remaider after division, if yes the modulus will be > 0
+   print("not divisible")   # set the result for the condition
