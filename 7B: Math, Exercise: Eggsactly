@@ -1,0 +1,5 @@
+eggs = int(input())  # set the variable as int from the input()
+print(eggs//12)      # to get the exact number of cartons without the decimal we want integer division with \\
+print(eggs%12)       # to get the remainder of eggs we use the modulus operator %
+
+# eggs//12 is the same as doing int(eggs/12)
