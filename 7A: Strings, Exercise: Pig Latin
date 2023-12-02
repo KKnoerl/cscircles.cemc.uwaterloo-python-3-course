@@ -1,0 +1,8 @@
+word = input()                              # Set your variable from the input()
+print(word[1:len(word)] + word[0] + "ay")   # Use concatenation and substrings to reform the word
+
+# This is going to be very similar to the lesson 7A: Strings Exercise: Heads and Tails
+# first we want the word without the first letter, the first letter is after position 0, so we want position word[1] though the end word[len(word)], so our range is word[1:len(word)]
+# then we want that first letter so we position the pointer at the start of the word: word[0]
+# then we want "ay" at the end
+# we use concatenation to put all three together: word[1:len(word)] + word[0] + "ay"
