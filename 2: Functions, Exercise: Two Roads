@@ -1,0 +1,6 @@
+print(max(min(a,b,c),min(d,e))) 
+
+# Just like the last problem we need the MIN of the three brides weight limit: min(a,b,c)
+# We also need the MIN of the two bridge on the other route: min(d,e)
+# Then we can pick either route for the best weight limits: max(), with min(a,b,c) as the first entry and min(d,e) as the second
+# put it all together: max(min(a,b,c),min(d,e))
