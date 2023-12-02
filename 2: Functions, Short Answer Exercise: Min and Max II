@@ -1,0 +1,4 @@
+x = min(max(13, 7), 9) # First what is larger, 13 or 7? Then what is smaller, that or 9?
+print(x)
+# Question: What is the output?
+# Answer: 9
