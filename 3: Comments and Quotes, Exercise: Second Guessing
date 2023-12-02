@@ -1,0 +1,10 @@
+# goal: print out the number of seconds in a week 
+secondsPerMinute = 60
+secondsPerHour = secondsPerMinute * 50 # todo: check this!
+secondsPerDay = secondsPerHour * 24
+daysPerWeek = 5
+# daysPerWeek = daysPerWeek + 2 # weekends are disabled!?
+print(secondsPerDay * daysPerWeek)
+
+# In line 3 there is a note: todo: check this!, here we want to change 50 to 60
+# In line 6 there is a # before the calculation we need. Presumably this line was disabled with the # to keep daysPerWeek = 5. But we want 7, so we enable this line by removing the #
