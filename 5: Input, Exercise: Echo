@@ -1,0 +1,5 @@
+a=input()
+print(a)
+print(a)
+
+# We cannot print(input()) on two lines because the code will look for a second input. Anytime we need an imput more than once we need to store it as a variable.
