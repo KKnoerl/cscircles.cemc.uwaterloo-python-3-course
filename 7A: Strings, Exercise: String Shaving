@@ -1,0 +1,8 @@
+S=input()             # first we get the string from the input
+print(S[1:len(S)-1])  # then we decide where our stopping points are. 
+
+# S[0] is the stopping point before the first letter, but we want to exclude that first letter, so add 1 and we get S[1]
+# then we want to end our range before the last letter, but len(S) finds the position after the last letter, so we want 1 less and we get S[len(S)-1]
+# put both of these in the S range to create the substring S[1:len(S)-1]
+
+# note: If you get the error: "TypeError: String indices must be integers make sure you are using a colon : to seperate the range and not a comma ,
