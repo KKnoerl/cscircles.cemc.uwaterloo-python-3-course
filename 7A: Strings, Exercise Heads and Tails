@@ -1,0 +1,7 @@
+S=input()                                   # set variable S as the string from input()
+print(S[len(S)-1] + S[1:len(S)-1] + S[0])   # use concatenation to rearrage the letters
+
+# We want the last character to go first. We need to set the pointer to just before the last character so we'll use S[len(S)-1]
+# Then we want the middle of the word. This is your answer from the last question. The 1 spot would be after the first letter, and the S[len(S)-1] will stop after the letter before the last
+# Then we want the first character to go last. We need to set the pointer to just before the first character, so that would be position 0, S[0]
+# Adding strings attaches them so we add these three parts together in the correct order: S[len(S)-1] + S[1:len(S)-1] + S[0]
