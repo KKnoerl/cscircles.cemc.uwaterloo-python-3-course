@@ -1,0 +1,9 @@
+x=int(input())
+if x > 0:              # Set the first condition for x (greater than)
+   print("Positive")   # Set the result if the condition is met
+if x == 0:             # Set the next condition for x (equal to, we use == to check equal, not = to state equal)
+   print("Zero")       # Set the result if the condition is met
+if x < 0:              # Set the last condition for x (less than)
+   print("Negative")   # Set the result if the condition is met
+
+   # These three ifs can be in any order
