@@ -1,0 +1,8 @@
+age = int(input())
+if age >= 18:                               # set the first condition as greater than or equal to
+   print("You can vote")                    # set the result if that condition is met
+if age < 18:                                # set the second condition as less than
+   if age >= 0:                             # we have two options, we already know we are less than 18, but what if we are also greater than or equal to 0?
+      print("Too young to vote")            # set the result if these two conditions are met
+   if age < 0:                              # second option, we already know we are less than 18, but what if we are also less than 0?
+      print("You are a time traveller")     # set the result if these two conditions are met
