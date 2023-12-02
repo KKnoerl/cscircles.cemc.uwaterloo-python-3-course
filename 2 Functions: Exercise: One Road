@@ -1,0 +1,1 @@
+print(min(a,b,c)) #This is a misleading question. It wants the MAXimum weight you can transport, but what we need is the smallest (MIN) weight limit of the three bridges.
