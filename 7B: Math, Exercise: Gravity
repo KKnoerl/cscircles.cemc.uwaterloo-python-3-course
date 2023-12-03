@@ -1,0 +1,14 @@
+import math                                       # we need to import the math module before we can use math.sqrt()
+v = float(input())                                # assign your variable as a float value from input()
+print((v-math.sqrt(v**2-4*-4.9*11000))/(2*-4.9))  # set up your equation. the parentheses are mostly the same as the given equation, but add parentheses for the top and bottom halves of the fraction
+
+# a walk through to typing your equation:
+# print has it's own set of parentheses
+# we need another set of parentheses for the top half of the fraction
+# v-math.sqrt() does not need additional parentheses because - is the only operation
+# math.sqrt has it's own parentheses
+# v**2-4*-4.9*11000 does not need parentheses because PEMDAS is the correct order. v**2 will happen first, then the multiplications, then the subtraction last
+# note: we should be careful about negative numbers and subtraction because they both use the same - symbol. when in doubt more parentheses don't hurt
+# we need another set of parentheses for the bottom half of the fraction
+# 2*-4.9 does not need parentheses because * is the only operation
+# note: we should be careful about negative numbers and subtraction because they both use the same - symbol. when in doubt more parentheses don't hurt
