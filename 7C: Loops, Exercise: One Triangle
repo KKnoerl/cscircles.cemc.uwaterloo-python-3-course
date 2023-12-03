@@ -1,0 +1,10 @@
+n=int(input())            # Set our variable as an int from input()
+for a in range(0,n):      # This will determine how many times we loop the program, creating new lines affects the height, here a is just a placeholder.
+   X = 0                  # Our starting point for the equation that draws the 1s
+   for a in range(0,n):   # This will determine how many times X goes throught the equaiton, creating the length of each line, here a is just a placeholder.
+      X = (X*10)+1        # This is the equation that draws 1s, when X is 0 we get 1 and that becomes the new X, run the equation again and we get 11, again and we get 111, each time there is another 1
+   print(X)               # This will print our final X value, in line 4 we told X to go through that equation n times, if n=5 then we will get 11111 as a single output 
+   n = n-1                # Now we are changing n, because we want one less 1 this time we need to reduce n by 1
+                          # Now the program loops back to line 3. X starts over at 0, and now that n is reduced by 1, if n started at 5 it is now 4, and X will run through our equation 4 times, 1111
+                          # This will now print as a new output line, and we will loop back to line 3 again.
+                          # In line 2 we told the program to loop lines 3 through 7, n times. the value of n at that time was 5 so we will end up with 5 lines of output.
