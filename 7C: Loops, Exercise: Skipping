@@ -1,0 +1,10 @@
+counter = 0                                  # Set the starting value for the variable counter
+while True:                                  # Set the loop (while) and the condition (True), This loop will continue until it encounters a False statement, or is told to end using break
+  lineIn = input()                           # Assign a variable from the input(), default type is str which is what we want
+  if lineIn=='SKIP':   # add this line       # Set our if condition for when we see the input 'SKIP'
+    continue           # add this line       # Set the result of that condition being met. continue will loop us back to line 3 and read the next input()
+  if lineIn=='END':                          # Set our next if condition for when we see the input 'END'
+    break                                    # Set the result of that condition being met. break will stop the loop and dump us after it, here it is the end of the program
+  counter = counter+1                        # When neither if condition is met we have the counter increase by 1
+  print('line', counter, '=', lineIn)        # When neither if condition is met we create this output
+                                             # We then loop back to line 3 and read the next input()
