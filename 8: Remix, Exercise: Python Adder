@@ -1,0 +1,9 @@
+S = input()                    # First we define the variable S to be a string from input()
+for A in range(0,len(S)):      # Now we create a for loop for variable A that runs through a range from 0 to the length of S, len(S)
+   if S[A] == "+":             # We use this variable A as an index position for sting S, and set a condition when S[A] returns a character equal to "+"
+      n1 = int(S[0:A])         # Now we create the first substring. n1 is equal to the int of the portion of S between position 0 and A (remember this happens when the if is True and A == "+")
+      n2 = int(S[A+1:len(S)])  # Now we create the second substring. n2 is equal to the int of the portion of S between position A+1 and the end length of S (this happens when A == "+")
+      print(n1 + n2)           # Now we print n1 + n2 for our result. (again, this happens when A == "+")
+                               # After this step, or when A does not equal "+", the program will loop back to line 3, and progress A to the next position in the range defined in line 2
+
+# This one is very tricky because in previous lessons we told the program where to create the substring, now we need the program to tell us
