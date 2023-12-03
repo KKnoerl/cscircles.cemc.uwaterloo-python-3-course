@@ -1,0 +1,5 @@
+n = int(input())                                  # Set out variable n as an int from input()
+for a in range(1,n+1):                            # create a for loop with variable a, and the range from 1 through n, we need n+1 to include n in the range
+   if n%a == 0:                                   # create an if condition for when n/a leaves no remainder, we can accomplish this with modulus (%) which returns remainder, and == 0 for no remainder
+      print(a, 'times', int(n/a), 'equals', n)    # create the output for when the condition is met.
+                                                  # the program then loops back to line 3, and progresses a through the range we defined in line 2 until that range is completed
