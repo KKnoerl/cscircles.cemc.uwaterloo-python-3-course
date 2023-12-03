@@ -1,0 +1,5 @@
+timeLeft = 1             # Set variable for the starting time
+while timeLeft <= 10:    # condition: we want to go to 10 so we can right <=10 or <11
+   print(timeLeft)       # the action we want it to perform
+	timeLeft = timeLeft+1  # adjustment to our variable for the next cycle
+print('Blastoff!')       # action after the loop is completed
