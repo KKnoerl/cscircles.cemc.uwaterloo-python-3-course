@@ -1,0 +1,24 @@
+# Compute the value of the expression
+6 - 52 // 5 ** 2
+# answer = 4
+
+# This is testing your knowledge of order of operations. PEMDAS or BEMDAS. I've provided an explanation for PEMDAS in the next block of text
+# first is P for parentheses or altenatively B for brackets. we have none so no action
+# next is E for Exponent. We have 5**2 which means 5 rised to the 2, 5^2, or 5 squared. we solve this to be two 5s being multiplied together. 5*5 = 25
+# now the equation is 6 - 52 // 25
+# next is M and D for multiplication and division. This step goes together because the two are related.
+# we have 52 // 25. remember that // is int division. The division is equal to 2.08, drop the decimal and 52 // 25 = 2
+# now the equation is 6 - 2
+# next is A and S for addition and subtraction. All we have left is 6 - 2 and that = 4
+# 4 is our answer
+
+# Why PEMDAS? What makes this the correct order?
+# PEMDAS can be broken up into 4 parts, P E MD AS
+# parentheses means it's important to do this first. As determined by the author of the equaiton. If that's what they say goes first, then we listen.
+# parentheses can also be implied like in sections of a large fraction. If there's math to do all written above a division fraction, that stuff is all together as if in parentheses
+# The order of E MD AS is determined by the order or magnitude of the operation. Exponents are a step up from multiplication is a step up from addition.
+# take any numbers >2 and chose E M or A. E is the greatest operator and will get you the largest result, M the middle, and A is the lowest operator with the smallest result.
+# for example a pair of 5s. using E we get 5**5 (or 5^5) = 3125, using M we get 5*5 = 25, or using A we get 5+5 = 10 so 3125>25>10 so E>M>A
+# multiplications and division get lumped together because it's the same type of operation just in reverse. x*y=z reverse is z/y=x or z/x=y also 60/4=15 and 1/4=0.25 so 60*0.25=15
+# addition and subtraction also get lumped together. Subtraction is just addition with negative numbers. 6 - 2 = 4 is the same as 6 + -2 = 4
+# I hope this helps you understand PEMDAS a little better.
