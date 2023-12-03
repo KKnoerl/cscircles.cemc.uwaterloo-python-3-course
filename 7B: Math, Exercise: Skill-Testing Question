@@ -1,0 +1,4 @@
+a = int(input())  # assign a variable to the first input()
+b = int(input())  # assign a variable to the second input()
+c = int(input())  # assign a variable to the third input()
+print((a+b)*c)    # because multiplicaiton comes before addition in PEMDAS we need parentheses to show to do the addition first
