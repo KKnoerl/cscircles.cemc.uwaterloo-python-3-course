@@ -1,0 +1,5 @@
+n=int(input())        # set our variable to be the int from input()
+for a in range(1,n):  # set the variable a to run though the range, and set the range we want to run this loop through, starting at 1 and ending at n
+   if a**2 < n:       # set our condition. here we want squares of variable a that are less than n
+      print(a**2)     # set result when if is true, we want the squares of a to print
+                      # now the program will loop back, a will move to the next number in the range, and we go to line 3 again, this will repeat until the end of our range n
