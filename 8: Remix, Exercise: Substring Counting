@@ -1,0 +1,7 @@
+needle = input()                                 # define the variable needle as the string from the first input()
+haystack = input()                               # define the variable haystack as the string from the second input()
+count = 0                                        # start a variable count, beginning at 0 
+for A in range(0,len(haystack)):                 # we will run variable A through a range starting at 0 and ending at the length of haystack
+   if haystack[0+A:len(needle)+A] == needle:     # next we define a substring of haystack from 0+A, through the length of the needle +A (so that we have a substring the length of needle and progress one position each loop) 
+      count = count+1                            # when this condition is met we increase our count by 1
+print(count)                                     # after the loop is done going through we output our final count
