@@ -1,0 +1,6 @@
+h = float(input())  # set your variable as a float from input()
+print(h*30.48)      # multiplication can be used to perform this conversion
+
+# If multiplication isn't apparent to you, think about this
+# 1ft = 30.48cm can be read as 30.48cm per 1 ft , but we have h ft , so we need 30.48 for each of the h ft , or 30.48 * h
+# if this still doesn't make sense to you, or you encounter more complex conversions, try cross-multiplication.
