@@ -1,0 +1,31 @@
+# Method 1, separating minutes and hours:
+time = input()                         # we set our variable time as a str() of the first input(), str is default
+duration = int(input())                # we set our variable duration as an int() of the second input()
+hours = int(time[0:2])                 # now we use a substring to separate hours from the time string and convert to int()
+minutes = int(time[3:5]) + duration    # we also do this for minutes, and add the duration
+if minutes >= 60:                      # now what if we have 60 or more minutes? 
+   hours = hours + minutes // 60       # in that case redefine hours to add the whole number of minutes // 60
+   minutes = minutes % 60              # and also redine minutes to be the remainder of minutes / 60 by using the modulus %
+if hours >= 24:                        # now what if the hours are 24 or more?
+   hours = hours % 24                  # we don't have to track days in this problem, so we just redefine hours to be the remainder of hours / 24 using the modulus %
+minutes = str(minutes)                 # now we convert minutes from int() to str()
+hours = str(hours)                     # and also convert hours from int() to str()
+if len(minutes) < 2:                   # but how do we add a 0 for a single digit time? we create an if statement for when the len() of minutes is < 2
+   minutes = '0' + minutes             # when that's true we concatenate minutes with a '0' in front
+if len(hours) < 2:                     # we'll do the same for hours. when the len() of hours is < 2
+   hours = '0' + hours                 # concatenate hours with a '0' in front
+print(hours + ':' + minutes)           # now we can write an output that concatenates hours ':' and minutes
+
+# method 2, converting hours to minutes:
+time = input()                                             # we set our variable time as a str() of the first input(), str is default
+duration = int(input())                                    # we set our variable duration as an int() of the second input()
+minutes = int(time[0:2])*60 + int(time[3:5]) + duration    # we create a variable minutes to be equal to total minutes, separating the parts to substrings, converting to int, and hours*60
+hours = str((minutes // 60) % 24)                          # we create a variable hours to a str equal to minutes // 60 to drop any decimal, and find the remainder when / 24 using modulus to drop days
+minutes = str(minutes % 60)                                # we redefine minutes to a str equal to the remainder when minutes / 60 using modulus
+if len(minutes) < 2:                                       # but how do we add a 0 for a single digit time? we create an if statement for when the len() of minutes is < 2
+   minutes = '0' + minutes                                 # when that's true we concatenate minutes with a '0' in front
+if len(hours) < 2:                                         # we'll do the same for hours. when the len() of hours is < 2
+   hours = '0' + hours                                     # concatenate hours with a '0' in front
+print(hours + ':' + minutes)                               # now we can write an output that concatenates hours ':' and minutes
+
+# There's almost definitely a better way to do this, but without knowing how Python handles time this is what I came up with.
