@@ -1,0 +1,5 @@
+letter = input()                                       # define our variable letter as the input(), default is str
+if ord(letter)>=ord('A') and ord(letter)<=ord('Z'):    # if the ascii of letter is between the asciis of 'A' and 'Z'
+    print(ord(letter)+1-ord('A'))                      # then output the ascii of letter +1 and - the ascii of 'A' (so that A will output 1, B as 2, etc.)
+else:                                                  # otherwise (the ascii is not in that range, thus it's not a capital letter)
+    print('invalid')                                   # output 'invalid'
