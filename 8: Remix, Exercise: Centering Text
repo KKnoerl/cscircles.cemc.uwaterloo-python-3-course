@@ -1,0 +1,11 @@
+width = int(input())                                      # set our variable width as the int of the first input()
+while True:                                               # set our loop, while True will run until there is a False statement or told to end with break
+   word = input()                                         # set our variable word as the next line of input(), default is str
+   if word == 'END':                                      # then we want to add our check for ending the while loop before we act upon this word
+      break                                               # if word is 'END' than we want to end the loop using break
+   dots = width - len(word)                               # but if word is not 'END', then we want to find how many total periods we need. we want the width - the number of characters in word
+   print('.'*int(dots/2+0.5) + word + '.'*int(dots/2))    # for our output we want half the dots before the word and half after. we use concatenation to combine the parts. but what if dots is odd?
+                                                          # if dots is odd we get a float when dividing by 2 so we need to use the int(), we also need to put that one dot on the left
+                                                          # that is why I added 0.5 before taking int() for the right side 
+                                                          # if the number is whole the 0.5 will drop off and the result is the same
+                                                          # if the number is something .5 adding 0.5 will bring it up to the next whole number, causing one more dot on that right side
