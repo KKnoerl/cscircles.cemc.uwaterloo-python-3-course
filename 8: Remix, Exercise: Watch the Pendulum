@@ -1,0 +1,5 @@
+import math                                                            # We need to import the math module to be able to use sqrt() and cos()
+L = float(input())                                                     # Define variable L as a float of the first input()
+A = float(input())                                                     # Defien variable A as a float of the second input()
+for T in range(0,10):                                                  # We want T to run from 0 to 9, so we create a for loop with range 0,9+1 (so 9 gets included)
+   print(L*math.cos(A*math.cos(T*math.sqrt(9.8/L)))-L*math.cos(A))     # Type in the equation for output, follow where the parentheses are in the original equation, and where they're added for math functions
