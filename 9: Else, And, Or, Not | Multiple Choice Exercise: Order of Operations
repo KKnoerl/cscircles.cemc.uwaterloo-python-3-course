@@ -1,0 +1,10 @@
+# Question: What is the value of: A or not B and C
+# when (A,B,C) is (False,True,True)
+
+# think of and, or. not as and(), or(), not()
+# The equation becomes:
+# A or (not (B and C))     # or if you like excel =OR(A,(NOT(AND(B,C))))
+# working inside the parentheses out
+# (B and C) = (True and True) = (True)
+# then we have to solve not(), not(True) = False
+# then we have A or (False) which becomes, False or (False) = False
