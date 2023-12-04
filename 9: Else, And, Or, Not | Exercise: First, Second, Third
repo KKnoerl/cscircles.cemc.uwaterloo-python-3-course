@@ -1,0 +1,9 @@
+x = int(input())          # first we assign variable x to the int of the input()
+if x == 1:                # first case, when x is 1
+   print(str(x) + 'st')   # then output str() of x concatenated with 'st' (we could just output '1st')
+elif x == 2:              # second case, when x is 2
+   print(str(x) + 'nd')   # then output str() of x concatenated with 'nd' (we could just output '2nd')
+elif x == 3:              # third case, when x is 3
+   print(str(x) + 'rd')   # then output str() of x concatenated with 'rd' (we could just output '3rd')
+else:                     # otherwise (x is 4 through 9)
+   print(str(x) + 'th')   # then output str() of x concatenated with 'th' (we CANNOT just output 'xth' because x could be anything )
