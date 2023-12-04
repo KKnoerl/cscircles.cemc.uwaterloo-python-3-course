@@ -1,0 +1,5 @@
+x=int(input())  # we set our variable x as the int of the input()
+if x >= 0:      # if x is positive (>=0)
+   print(x)     # then the output is x
+else:           # otherwise (must be negative <0)
+   print(-x)    # then output -x (- a negative is a positive)
