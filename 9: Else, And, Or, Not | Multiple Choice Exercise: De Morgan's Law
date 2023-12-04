@@ -1,0 +1,16 @@
+# Question: Which of the following expressions is equivalent to A or B?
+# run through the options assuming A and B are True 
+
+# Option 1: (not A) and (not B)        # This becomes: (False) and (False) which becomes False
+# Option 2: not (A and B)              # This becomes: not ((True) and (True)) which becomes: False
+# Option 3: not ((not A) and (not B))  # This becomes: not ((False) and (False)) which becomes: not(False) which becomes True
+
+# The only answer that works when both A and B are true is Option 3
+
+# We should also test when one of them is True and one is False:
+
+# Option 1: (not A) and (not B)        # This becomes: (True) and (False), which becomes: False
+# Option 2: not (A and B)              # This becomes: not (False and True) which becomes: not(False) which becomes: True
+# Option 3: not ((not A) and (not B))  # This becomes: not ((True) and (False)) which becomes: not(False) which becomes True
+
+# The only Option to pass both sinarios is Option 3.
