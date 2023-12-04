@@ -1,0 +1,19 @@
+# This is a nasty question. Our first instinct is to figure out how to print a for loop all on the same line with the starting text, but we can't.
+# The key to solving this is take the loop results as a string and concatenate the string together to form each line.
+
+ascii = 32                            # first we define a variable ascii equal to the ord() values we will move through, starting at 32
+while ascii <= 127:                   # then we create a while loop, we want to keep generating outputs until we reach the end target of 127
+   line1 = ""                         # we then create a variable line1, we will use this as our current string in the chr: lines
+   line2 = ""                         # we also create a variable line2, we will use this as our current string in the asc: lines
+   for a in range(ascii,ascii+16):    # now we create a for loop, beginning at the current ascii value and ending at ascii+16, this will be the start and end each row
+      C = str(chr(a)+'   ')           # now we create variable C, this will be the result of the for loop and 3 spaces that we add on to the line1 string each time
+      line1 = line1 + C               # line1 started blank ("") but now we're concatenating C to redefine line1, line 1 will keep building until the row for chr: is complete
+      if len(str(a)) == 2:            # we need to do the same with A for the asc: line, but it could be a 2 digit number or 3, and that changes the spacing we need. 
+         A = str(a)+'  '              # if A is ==2 then we need 2 spaces, and otherwise use the same form as we did with C
+      if len(str(a)) ==3:             # if A is ==3
+         A = str(a)+' '               # then we need 1 space, and otherwise use the same form as we did with C
+      line2 = line2 + A               # now just line line1, we build up our line2 string by concatenating A
+   print('chr:  ' + line1)            # still in the while loop, but out of the for loop. we can print out the row text and the string we built for the chr: row using our line1 string
+   print('asc: ' + line2)             # still in the while loop, but out of the for loop. we can print out the row text and the string we built for the asc: row using our line2 string
+   ascii = ascii + 16                 # after printing our first chr: and asc: lines, we add ascii+16
+                                      # the while loop begins again. The for loop range will also change. the next lines continue to output until the while loop is finished
