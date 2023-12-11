@@ -1,0 +1,11 @@
+def lowerChar(char):                                      # copy previous answer, we will be calling this function for every character in the string
+   if ord(char) >= ord('A') and ord(char) <= ord('Z'):
+      return chr(ord(char)+32)
+   else:
+      return char
+ 
+def lowerString(string):                                  # now we define a new function that will lowercase an entire string by calling lowerChar for each character
+   result = ""                                            # we set a variable to build our final string, beginning at blank ""
+   for a in range(0,len(string)):                         # we create a for loop that runs between 0 and the length of the string   # "0," is not strictly necessary
+      result = result + lowerChar(string[a])              # we build up our variable string by adding on the result each time
+   return result                                          # outside of the for loop (after it's finished) we return the completed string
