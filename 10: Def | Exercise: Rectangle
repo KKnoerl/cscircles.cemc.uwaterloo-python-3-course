@@ -1,0 +1,5 @@
+def rectanglePerimeter(width, height):       # def to define a function, retanglePerimeter to name the function, (width, height) to define two arguments AKA inputs
+   return width + height + width + height    # return to define the result, followed by our equation
+
+alt:
+# return 2*(width + height)
