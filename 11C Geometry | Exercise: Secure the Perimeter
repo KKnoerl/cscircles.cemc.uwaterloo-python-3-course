@@ -1,0 +1,5 @@
+def trianglePerimeter(xA, yA, xB, yB, xC, yC):   # define our new function triangleParimeter to take 6 arguments
+   a = distance2D(xA, yA, xB, yB)                # use our distance2D formula to get distance between each set of points
+   b = distance2D(xB, yB, xC, yC)
+   c = distance2D(xC, yC, xA, yA)
+   return a + b + c                              # and our result is to add the three distances together, sides a, b, and c, to get the perimeter of the triangle
