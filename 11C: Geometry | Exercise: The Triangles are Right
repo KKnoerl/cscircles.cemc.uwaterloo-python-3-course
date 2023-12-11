@@ -1,0 +1,2 @@
+def rightTrianglePerimeter(a, b):    # we diefine a new function rightTriangle Parimeter that takes two arguments a and b
+   return hypotenuse(a,b) + a + b    # the result is the answer from function hypotenuse added to a and b
