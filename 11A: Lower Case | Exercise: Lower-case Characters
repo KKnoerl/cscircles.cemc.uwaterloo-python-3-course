@@ -1,0 +1,5 @@
+def lowerChar(char):                                         # first we define the function lowerChar, and the argument char
+   if ord(char) >= ord('A') and ord(char) <= ord('Z'):       # now we set our conditions: if the ascii of char is >= the ascii for A and <= the ascii for Z:
+      return chr(ord(char)+32)                               # the result is to add 32 to our char ascii and then convert back to chr
+   else:                                                     # when the if condition is not met:
+      return char                                            # the result is the original char
