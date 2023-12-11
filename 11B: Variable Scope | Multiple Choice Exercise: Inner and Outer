@@ -1,0 +1,9 @@
+# What is the output of the following program?
+
+x = "outer"                # x (global) is set to = "outer"
+def xReplace(value):       # we define a function xReplace with one argument (value)
+   x = value               # when called, x withing the fuction (local) is = value
+xReplace("inner")          # we call the fdunction xReplace, now local x is = value, but there is no print or return to do anything with local x
+print(x)                   # finished with the function we now print(x), this will call global x because we are outside of the function
+
+# Answer: outer
