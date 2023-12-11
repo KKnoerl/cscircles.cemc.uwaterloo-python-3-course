@@ -1,0 +1,4 @@
+def distance2D(x1, y1, x2, y2):    # first we define our function distance2D which allows 4 arguments. 
+   a = x1 - x2                     # next we define variable a to be equal to the distance between x1 and x2
+   b = y1 - y2                     # next we define variable b to be equal to the distance between y1 and y2
+   return hypotenuse(a, b)         # now we can have the result use the hypotenuse funtion, using the a and b we just described
