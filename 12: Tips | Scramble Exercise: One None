@@ -1,0 +1,18 @@
+# Question: The output of print(type(print(type(type(print(print())))))) consists of 4 lines. Put them in the correct order.
+
+# This line has 4 lines of output because there are 4 print arguments, lets work through them from the center outward
+# i will use ^ to mean the above arguments
+
+# print()   # an empty print will return an empty line, this is our output for Line 1: <<blank line>>
+# print(^)  # print() is used, creating an empty refrence that will return the placeholder None, this is our output for line 2: None
+# type(^)   # The type for None is <class 'NoneType'> but there is no output on this step
+# type(^)   # The type of a type is <class 'type'> but there is no output on this step
+# print(^)  # we print the above result which was <class 'type'> this is the output for line 3: <class 'type'>
+# type(^)   # print() is used, creating an empty refrence that will return the placeholder None, the type for this is <class 'NoneType'>, no output on this step
+# print(^)  # we print the above result which was <class 'NoneType'> this is the output for line 4: <class 'NoneType'>
+
+# Answer:
+# <<blank line>>
+# None
+# <class 'type'>
+# <class 'NoneType'>
