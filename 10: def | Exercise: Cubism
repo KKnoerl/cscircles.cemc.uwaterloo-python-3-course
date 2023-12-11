@@ -1,0 +1,2 @@
+def cube(n):     # def to define a function, cube to name the function, n to take one argument from input
+   return n*n*n  # return to specify the result, n*n*n for the action we want to take
