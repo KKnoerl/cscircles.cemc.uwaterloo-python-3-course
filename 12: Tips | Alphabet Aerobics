@@ -1,0 +1,10 @@
+# Question: Using what we just introduced, debug the following program so that it outputs the upper-case alphabet all on one line.
+
+for c in range(0, 26):
+ print(chr(ord('A')+c))
+
+ # This will print normally all on diferent lines, we need to add an end='' argument
+
+# Answer:
+ for c in range(0, 26):
+ print(chr(ord('A')+c),end='')
