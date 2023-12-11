@@ -1,0 +1,4 @@
+for i in range(17,100,10):   # we set the range to start at 17 and step by 10, until we get to 99
+   print(i)                  # we print each iteration of i
+
+# without the step modifier we would need to looks at S[1] and checks everything for 7s
