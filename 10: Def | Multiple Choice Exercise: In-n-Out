@@ -1,0 +1,10 @@
+# Question: What is the output of the following program?
+
+def f():          # function of 0 arguments     # We define function f with no arguments (no input())
+   print("in f")                                # When called, this function will print "in f"
+print("not in f")                               # print will now output the quoted text "not in f" this is our first output line
+f()               # call f now                  # now function f is called, function f is defined to print "in f" this is our second output line
+
+# Answer:
+# line 1: not in f
+# line 2: in f
