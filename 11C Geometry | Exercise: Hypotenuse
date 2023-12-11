@@ -1,0 +1,3 @@
+import math                           # we need to import the math mudule to use the sqrt function later
+def hypotenuse(a, b):                 # we define a funtion hypotenuse to take two arguments a and b
+   return math.sqrt(a**2 + b**2)      # we define the result to solve for c, if a^2 + b^2 = c^2, then we need to take the squareroot to solve for c
