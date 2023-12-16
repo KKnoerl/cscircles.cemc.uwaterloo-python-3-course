@@ -1,0 +1,7 @@
+def middle(L):                  # start by defining the function "middle" that takes argument "L"
+   return L[int(len(L)/2)]      # have the function return the middle value. We do this by splitting the length of "L" in half. Then we want to round down and use the int, thankfully int() already rounds off the decimal.
+
+                                # normally a middle value would be half rounded up, but since the range always starts with 0 instead of 1 we want to round the other way
+                                # think about a list of 5 like your 5 fingers. 5/2 = 2.5 and you would say your third finger is the middle one (rounding up) but you count from 1 to 5
+                                # the list index would go from 0 to 4, and now your finger in position 2 is your middle finger. so we need 5/2 = 2.5 to round down to 2
+                                # L[2.5] won't work because we need an int value not a float. when we convert to int() the decimal goes away, which is perfect for getting 2.5 down to 2
