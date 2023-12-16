@@ -1,0 +1,17 @@
+# Question: The mode of a list is the element which occurs most frequently (the one which appears the maximum number 
+# of times). Unscramble the following program so that mode(L) correctly finds the mode, assuming L is a list of 
+# numbers from 0 to 9. (On our tests, there won't be two numbers tied for the maximum frequency.)
+
+# Answer:
+def mode(L):                           # first we define the function "mode" to take one argument "L"
+  frequency = [0]*10                   # then we set a list "frequency" to equal 10 zeros, these are starting tallys for numbers 0 through 9.
+  for i in L:                          # for all values "i" in list "L"
+    frequency[i] = frequency[i] + 1    # we redefine the "i"th value to add 1. this will cause the numbers to tally themselves in the 0 through 9 positions of our list
+  for i in range(0, 10):               # with that completed, we create a for loop with variable "i" to run through range 0 to 9 (remember 10 is exclusive)
+    if frequency[i]==max(frequency):   # if the "i"th value of "frequency" in this range (0 to 9) is equal to the max (highest tally) in the list
+      return i                         # the answer to mode() is "i"
+
+
+    # this is a tricky one because we have to understand how the author thought through the problem. We haven't solved any exercises like this before, although we have the foundation.
+    # this is the first time we've seen using a list to tally up repetitions of numbers. 
+    # it's difficult to understand what approach this author took while unscrambling code.
