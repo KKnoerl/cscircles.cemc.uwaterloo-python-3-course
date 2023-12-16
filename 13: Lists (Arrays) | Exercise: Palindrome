@@ -1,0 +1,7 @@
+def isPalindrome(S):            # first we define a function "isPalindrome" that takes one argument "S"
+   for i in range(0,len(S)):    # then create a for loop to run through each letter in the string (we could stop half way, but this code is simpler)
+      if S[i] != S[-(i+1)]:     # then we use an if statement to see the letter is position i is not equal to (!=) the letter (i+1) positions from the end (-) 
+         return False           # if any of those comparisons meet the if statement of not equal (!=), the function will return "False" and end there
+   return True                  # if the for loop completes (a != isn't found), the function will then return as "True" and end.
+
+                                # rememeber a defined function will end after the first return.
