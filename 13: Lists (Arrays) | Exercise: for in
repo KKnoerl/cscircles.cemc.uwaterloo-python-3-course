@@ -1,0 +1,6 @@
+                 # same idea but simplifying how we write it
+def prod(L):
+  n = 1
+  for i in L:    # we don't need to create the range we can just say "in L:"
+    n *= i       # remember the shortcut to redefine n using an = after an operator? we can use this here to redefine n after multiplication with i
+  return n
