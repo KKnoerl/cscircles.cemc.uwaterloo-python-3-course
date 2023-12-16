@@ -1,0 +1,9 @@
+# Question: What is the value of x that will cause mystery(x) to run forever?
+
+def mystery(x):
+  a = [0, 4, 0, 3, 2]
+  while x > 0:          # x needs to be greater than 0 to continue through the loop
+    x = a[x]            # so we either need a value where x is equal to the number in the [x] position, or that would loop back on itself
+  return "Done"
+
+# Answer: 3             # 3 is in the [3] position so this will reassign x from 3 to 3, and always > 0, so it loops forever
