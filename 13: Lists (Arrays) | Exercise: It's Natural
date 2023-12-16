@@ -1,0 +1,5 @@
+def naturalNumbers(n):        # first we define our function "naturalNumbers" with 1 argument "n"
+   list = []                  # next we set up an empty list, I chose the name "list"
+   for i in range(1,n+1):     # now we create a for loop and the range we need. We want our output to start at 1 so we begin i at 1, then we want to go through and include n, end range is exclusive, so we need n+1
+      list = list + [i]       # now we redefine our "list" using concatenation. i needs to be in brackets so that it is a list item and not an int
+   return list                # once the for loop is concluded, we return the final "list"
