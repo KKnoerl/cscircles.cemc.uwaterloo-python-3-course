@@ -1,0 +1,1 @@
+print("Bonjour, tout le monde!")  # print() will create an output, and quotes are used for litteral text
