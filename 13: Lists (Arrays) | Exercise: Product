@@ -1,13 +1,5 @@
 def prod(L):                     # first we define the function "prod" to take one argument "L"
    n = 1                         # then we create a variable to hold our progress on the multiplication, 0 * anything is 0, so for multiplication we should start at 1
    for i in range(0,len(L)):     # we run a variable through the range of positions through L
-      n = n * L[i]               # and we reassign n to be n times the number in position i of the list "L"
+      n = n * L[i]               # and we reassign n to be n times the number in position i of the list "L" 
    return n                      # when the for loop is done we can return the value for n
-
-
-# alternate:                     # same idea but simplifying how we write it
-def prod(L):
-  n = 1
-  for i in L:                    # we don't need to create the range we can just say "in L:"
-    n *= i                       # remember the shortcut to redefine n using an = after an operator? we can use this here to redefine n after multiplication with i
-  return n
