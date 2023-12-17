@@ -1,0 +1,4 @@
+def replace(list, X, Y):               # first we create a function named "replace" that takes three arguements, one for the list, two for values "X" and "Y"
+   while list.count(X) != 0:           # then we create a while loop that will continue to run while there is X in the list (when the count of X is not equal to 0)
+      list.insert(list.index(X),Y)     # now we can insert our Y value "list.insert(?,Y)" at the first position X is in ? = "list.index(X)"
+      list.remove(X)                   # now that we have Y in place we need to remove that first instance of X using "list.remove"
