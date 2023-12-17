@@ -1,0 +1,13 @@
+tmp = max(x,y)  # Store the larger of x and y as the variable tmp
+x = min(x,y)    # Change x to be equal to the smaller of x and y
+y = tmp         # Change y to be equal to the tmp variable where we stored the larger value
+tmp = max(y,z)  # Store the larger of y and z as the variable tmp
+y = min(y,z)    # Change y to be equal to the smaller of y and z
+z = tmp         # Change z to be equal to the tmp variable where we stored the larger value
+tmp = max(x,y)  # Store the larger of x and y as the variable tmp
+x = min(x,y)    # Change x to be equal to the smaller of x and y
+y + tmp         # Chanfe y to be equal to the tmp variable where we stored the larger value
+
+# This one was tricky. There are many ways you can approach this problem but you need to use what you have and figure out what the original solver was thinking
+# For this we are going to use the variable tmp to store a value for us. Similar to the Lesson 1 problem: Exchange Program
+# First we sort x and y, then y and z, and then in case y changed we sort x and y again.
