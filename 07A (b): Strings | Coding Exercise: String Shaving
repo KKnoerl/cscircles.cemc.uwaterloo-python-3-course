@@ -6,3 +6,4 @@ print(S[1:len(S)-1])  # then we decide where our stopping points are.
 # put both of these in the S range to create the substring S[1:len(S)-1]
 
 # note: If you get the error: "TypeError: String indices must be integers make sure you are using a colon : to seperate the range and not a comma ,
+# At this point, it seems brackets [] like to use a colon :, and parenthesis () like to use a comma ,
