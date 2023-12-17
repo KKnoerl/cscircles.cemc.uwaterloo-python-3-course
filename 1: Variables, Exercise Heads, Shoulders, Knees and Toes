@@ -1,4 +1,0 @@
-heads=people # 1 head per person
-shoulders=2*people # 2 shoulders per person
-knees=2*people # 2 knees per person
-toes=10*people # 10 toes per person
