@@ -1,9 +1,0 @@
-print('User logged on.')
-if hour>17:
-   print('Good evening!')
-print('Enter a command:')
-
-# Question: Which of the following outputs is not possible for this program?
-# Answer: one line: 'User logged on.'
-
-# line 4 is not in the if block and will happen reguardless of the if

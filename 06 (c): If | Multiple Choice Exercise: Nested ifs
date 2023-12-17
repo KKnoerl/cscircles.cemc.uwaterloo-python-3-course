@@ -1,0 +1,10 @@
+# Question: Which of the following outputs is not possible for this program?
+
+print('User logged on.')
+if hour>17:
+   print('Good evening!')
+print('Enter a command:')
+
+# Answer: one line: 'User logged on.'
+
+# line 4 is not in the if block and will always happen reguardless of the if
