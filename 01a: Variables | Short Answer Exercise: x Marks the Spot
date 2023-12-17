@@ -1,0 +1,7 @@
+# Question: What is the value of x after these commands execute?
+
+x = 10         # we start with x equal to 10
+x = x + x      # now x is equal to 10 + 10, now x = 20
+x = x - 5      # now x is equal to 20 - 5, now x = 15
+
+# Answer: 15    
