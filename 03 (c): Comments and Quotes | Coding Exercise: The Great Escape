@@ -1,0 +1,11 @@
+# Option 1: quote with " "
+# using double quotes for the text, we must escape the backslash \\ and the double quote \" before ending the text with "
+# Answer: 
+
+print("A double-quote's escaped using a backslash, e.g. \\\"") 
+
+# Option 2: quote with ' '
+# using single quotes for the text, we must escape the apostrophe in quote's as quote\'s, and escape the backslash as \\
+# Answer: 
+
+print('A double-quote\'s escaped using a backslash, e.g. \\"') 
