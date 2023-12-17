@@ -1,7 +1,8 @@
-S[len(S)-1]
-
 # Question: Find the last character of string S
+
+S[len(S)-1]
 
 # Think of the index as a stopping point inbetween characters, and the character after gets read.
 # index 0 is the starting position before the first character, so S[0] is the first character
 # len() will find the end position after the last character, but there's no character after the end, we want one less, so S[len(S)-1] is the last character
+# In other words, the start of the range in inclusive, the end range is exclusive
