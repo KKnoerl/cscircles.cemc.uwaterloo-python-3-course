@@ -1,0 +1,5 @@
+# Question: write min(A,B) without using min
+
+print(A+B-max(A,B))
+
+# Similar to the scramble exercise from Lesson 2 "Sort of Strangeness", we can add A and B together, and then subract the larger using max

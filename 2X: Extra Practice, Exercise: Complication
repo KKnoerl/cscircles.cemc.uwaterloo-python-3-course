@@ -1,4 +1,0 @@
-print(A+B-max(A,B))
-
-# Question: write min(A,B) without using min
-# Similar to the sorting exercise from Lesson 2, we can add A and B together, and then subract the larger using max
