@@ -3,6 +3,8 @@ print("Backslashes \\ and single quotes \' and double quotes \" and pound signs 
 # The first double quote " denotes the start of text and will not appear
 # A backslash will escape itslef so \\ will read: \
 # A backslash will escape a single quote so \' will read: '
-# A backslash will escapw a double quote so \" will read: "
+# A backslash will escape a double quote so \" will read: "
 # The pound sign is within the qutoed text so it will read: #
 # The last double quote " denotes the end of text and will not appear
+
+# Answer: Backslashes \ and single quotes ' and double quotes " and pound signs # are awesome!
