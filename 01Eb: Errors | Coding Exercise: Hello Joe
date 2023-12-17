@@ -1,0 +1,3 @@
+print("Hello")
+username = "Joe"     # Joe needs quotation marks to denote a string and not an undefined variable
+print(username)
