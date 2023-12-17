@@ -1,0 +1,3 @@
+L = float(inputStr)  # First we L equal to the float of the inputStr
+A = L*L              # Then we calculate Area
+print(int(A/100))    # Then we need to calculate how many people if they eat 100 per. so A/100. We want to round down, but thankfully converting to int will drop the decimal
