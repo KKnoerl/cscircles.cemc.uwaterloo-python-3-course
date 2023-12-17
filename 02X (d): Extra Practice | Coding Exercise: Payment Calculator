@@ -5,5 +5,5 @@ print(min(balance,max(10,balance*0.021)))
 # Next is determining what that minimum payment would be $10 or 2.1% of the balance, which ever is greater
 # 2.1% of the balance would be *0.021
 # max(10,balance*0.021)
-# now we can plug this in to our previous equaiton
+# now we can plug this in to our previous equaiton where we left the question mark
 # min(balance,max(10,balance*0.021))
