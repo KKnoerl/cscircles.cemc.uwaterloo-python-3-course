@@ -1,0 +1,9 @@
+# Question: If we change 1.2 to 1.5 in the above program, what is the first line of output?
+
+x = 1.2                              # x has a decimal so it is a float
+y = 2                                # y does not have a decimal so it is an int
+z = x * y                            # When a float is in an equation the answer is also a float. A whole number as a float shows .0
+print(x, y, z)
+print(type(x), type(y), type(z))
+
+# Answer: 1.5 2 3.0
