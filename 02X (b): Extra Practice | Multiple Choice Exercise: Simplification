@@ -1,6 +1,7 @@
+# Question: What is the simplification of the following expression?
+
 max(x - 3, min(x + 10, x + 5))
 
-# Question: What is the simplification of the following expression?
 # Answer: x + 5
 
 # We can read this as "What's larger, x-3 or min(x + 10, x + 5) ?
