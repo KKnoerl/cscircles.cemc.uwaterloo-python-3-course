@@ -1,0 +1,8 @@
+def postalValidate(S):                                                                                                   # define our function
+   S = S.replace(" ","")                                                                                                 # reassign S to be S with space " " replaces with nothing ""
+   if len(S) != 6:                                                                                                       # check to see if the new length is not 6
+      return False                                                                                                       # then return False
+   elif S[0].isalpha() and S[1].isdigit() and S[2].isalpha() and S[3].isdigit() and S[4].isalpha() and S[5].isdigit():   # otherwise check all the number and letter positions are correct
+      return S.upper()                                                                                                   # then return the uppercase conversion of S
+   else:                                                                                                                 # otherwise
+      return False                                                                                                       # return as False
