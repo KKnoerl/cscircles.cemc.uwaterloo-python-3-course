@@ -1,0 +1,10 @@
+# here is a broken solution to get you started
+def execute(prog):
+  location = 0
+  visited = [False] * len(prog)                                              # add this line: (from hint) we are creating a list of "False", one for each list item in "prog"
+  while True:
+    if location==len(prog)-1: return "success"
+    elif visited[location]==True: return "infinite loop"                     # add this line: read next line, if we've already visited this line it will be marked "True" and we have an infinite loop
+    visited[location] = True                                                 # add this line: this will change the the "False" in this spot to "True"
+    T = prog[location].split() #get T from prog[location] via str.split      # add this line: directions from given note.
+    location = findLine(prog, T[-1])                                         # CHANGE THIS LINE: T needs to be T[-1]
