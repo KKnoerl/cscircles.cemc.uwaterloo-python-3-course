@@ -1,0 +1,12 @@
+# This is a tricky problem because they don't tell you how to expect the input, or how they expect the output.
+# the entire line will input at once
+# the output should be a return of a list, where each list item is a line from input
+
+def getBASIC():                 # first we define our function "getBASIC" with zero arguments ()
+   List = []                    # now we create an empty List []
+   while True:                  # create an open while loop
+      S = input()               # create a string from input
+      List.append(S)            # add that string to our list
+      if S.endswith("END"):     # if that string endswith "END"
+         break                  # then we break out of the while loop
+   return List                  # after the loop completes, we return the List
