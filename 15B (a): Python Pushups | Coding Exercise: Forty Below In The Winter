@@ -1,0 +1,9 @@
+temp = input()               # create a string "temp" from the input
+if temp.endswith("F"):       # check to see if our string ends with an F
+   f = float(temp[0:-1])     # if it does, take the float from the string, excluding the last character (F)
+   c = (f-32)*(5/9)          # perform the calculation
+   print(str(c)+"C")         # convert back to string to concatenate "C"
+else:                        # if our string does not end in F (it will end in C)
+   c = float(temp[0:-1])     # take the float from the string, excluding the last character (C)
+   f = c*(9/5)+32            # perform the calculation
+   print(str(f)+"F")         # convert back to string to concatenate "F"
