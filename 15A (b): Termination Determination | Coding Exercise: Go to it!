@@ -1,0 +1,8 @@
+# the hint says we can use split, but I don't think we need it
+
+def findLine(prog, target):       # first we define our function "findLine" that takes two arguments "prog" and "target"
+   for i in range(len(prog)):     # then we set a for loop to run i through the length of the list ( in range(0,len(prog)): the 0, is implied )
+      S = prog[i]                 # set a string to be equal to the ith item in the list
+      if S.startswith(target):    # if that string starts with the "target" value,
+         break                    # then break out of the loop
+   return i                       # when the loop is done/broken, return with the last i value 
