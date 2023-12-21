@@ -1,0 +1,29 @@
+# Just copy and paste your answers to the three parts 
+
+def getBASIC():
+   List = []
+   while True:
+      S = input()
+      List.append(S)
+      if S.endswith("END"):
+         break
+   return List
+
+def findLine(prog, target):
+   for i in range(len(prog)):
+      S = prog[i]
+      if S.startswith(target):
+         break
+   return i 
+
+def execute(prog):
+  location = 0
+  visited = [False] * len(prog)
+  while True:
+    if location==len(prog)-1: return "success"
+    elif visited[location]==True: return "infinite loop"
+    visited[location] = True 
+    T = prog[location].split()
+    location = findLine(prog, T[-1])
+
+print(execute(getBASIC()))
