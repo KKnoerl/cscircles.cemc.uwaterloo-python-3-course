@@ -1,0 +1,13 @@
+# this is going to be a difficult one if you don't understand the math. 
+
+def choose(n,k):                   # define our function "choose" that takes two arguments "n" and "k"
+   Top = 1                         # for the top of the equation we need a running multiplier so we start at 1
+   for i in range(n):              # for the top of the equation we need i from 0 to < n
+      Top *= n-i                   # we update the running multiplier with n-i for each value of i
+   Bottom1 = 1                     # the bottom will split into two parts, for the first we start a new multiplier
+   for i in range(k):              # for this part of the equation we need i from 0 to < k
+      Bottom1 *= k-i               # we update the running multiplier with k-i for each value of i
+   Bottom2 = 1                     # for the second part of the bottom of the equation, we start another new multiplier
+   for i in range(n-k):            # for this part we need i+k < n so in terms of i, i < (n-k)
+      Bottom2 *= (n-k)-i           # we update the running multiplier with (n-k)-i for each value of i
+   return Top/(Bottom1*Bottom2)    # now we put all the running multipliers together
