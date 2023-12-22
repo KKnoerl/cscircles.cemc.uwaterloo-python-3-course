@@ -1,0 +1,12 @@
+# Question: If the encrypted message is HUD, and the shift value is S=6, what was the original message?
+# Answer: BOX
+                                                      # creating a plan for later
+# to solve this convert the letters to numbers        # we could use a for loop to run through each letter
+# 8,21,4                                              # we could convert letters to ord()
+# subtract 6 from each number                         # we can subtract 6 from the ord(), for ord()s in the letters range
+# 2,15,-2
+# add 26 to any number less than 26                   # we could create an if statement to check < ord('A')
+# -2 + 26 = 24                                        # when true we can add ord('Z')
+# 2,15,24
+# and finally convert back to letters                 # then we can convert back to char()
+# BOX                                                 # and build a string from there
