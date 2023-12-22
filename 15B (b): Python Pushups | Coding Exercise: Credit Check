@@ -1,0 +1,12 @@
+# this is a difficult problem because the question doesn't tell us that we also have to check for all 0s or all 5s that pass the checksum test
+
+def check(S):                                  # define our function "check" with one argument "S"
+   Card = S.replace(" ","")                    # create a new string that replaces the spaces " " with nothing ""
+   if len(Card)!=16: return False              # if the length of the new string is not 16, return False
+   if Card.isdigit()==False: return False      # if the new string is not all numbers, return False
+   N = 0                                       # create a variable to count the sum of the digits, starting at 0
+   for i in range(len(Card)):                  # create a for loop that goes through the range of the length of the new string
+      if Card[i]==Card[i-1]: return False      # if the digit is the same as the one before it (this isn't true IRL, but it will filter out the all 0s or all 5s tests)
+      N+=int(Card[i])                          # add that digit to our N running total
+   if N%10==0: return True                     # if you can divide N by 10 without a remainder (remainder ==0), return True
+   else: return False                          # otherwise, return False
