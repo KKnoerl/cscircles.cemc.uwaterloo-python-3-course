@@ -1,0 +1,11 @@
+poemStr = ""                                  # start with an empty string for the poem
+while True:                                   # create an open loop
+   Line = input()                             # take the "Line" from input()
+   if Line == "###": break                    # check if the poem is done with "###" to break the loop
+   poemStr += " "+Line                        # otherwise, concatenate the Line onto our poem string with a space so words don't merge together
+poemStr = poemStr.lower()                     # convert the poem string to lowercase
+poemList = poemStr.split()                    # create a list of the poem words using split() on the string
+count = [0]*len(poemList)                     # create a tally list of 0s, one for each word in our poem list
+for i in range(len(poemList)):                # create a for loop to run through each word in the poem list
+   count[poemList.index(poemList[i])] +=1     # we index the poem word at i, to get the first position of that word, then in our count list we tally +1 to the matching position
+print(poemList[count.index(max(count))])      # index the maximum value of the count list, use that as the index for our poem list, and print that word
