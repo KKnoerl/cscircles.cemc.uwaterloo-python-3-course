@@ -1,0 +1,12 @@
+# Question: What is the result of encrypting SPY CODER with the shift value S=5?
+# Answer: XUD HTIJW
+                                                      # creating a plan for later
+# to solve this convert the letters to numbers        # we could use a for loop to run through each letter
+# 19,16,25 3,15,4,5,18                                # we could convert letters to ord()
+# add 5 to each number                                # we can add 5 to the ord(), for ord()s in the letters range
+# 24,21,30 8,20,9,10,23
+# subtract 26 from any number over 26                 # we could create an if statement to check > ord('Z')
+# 30 - 26 = 4                                         # when true we can subtract ord('Z')
+# 24,21,4 8,20,9,10,23
+# and finally convert back to letters                 # then we can convert back to char()
+# XUD HTIJW                                           # and build a string from there
