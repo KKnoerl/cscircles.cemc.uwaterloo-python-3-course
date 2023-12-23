@@ -1,0 +1,6 @@
+def countdownBy2(n):
+  if n <= 0:               # change n == 0 to n <= 0, this will stop it from going negative
+    print('Blastoff!')
+  else:
+    print(n)
+    countdownBy2(n - 2)
