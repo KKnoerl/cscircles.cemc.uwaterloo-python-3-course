@@ -5,11 +5,23 @@ def countup(n):          # change countdown to countup
   countup(n - 1)         # change countdown to countup, put in line with the if statement
   print(n)               # move print to the bottom, put in line with the if statement
 
-  # This is a tricky one. They tell you how to start at n and take n-1, similar to a loop. 
-  # They don't tell you how to start at 0 and count up to stop at n.
-  # they show you a limit without explaining that either.
-  # They don't explain how this works or why n-1 still works for counting up. 
+# to visualize this, lets say n = 3
 
-  # I believe this works by repeating line 5: n-1 until we get the n == 0 'Blastoff!' output,
-  # Then in the next iteration it does the same but goes to n == 1 and prints n
-  # this is repeated until n = the original n
+# in the original function we have countup(3)
+# if n == 0, it is not, so we continue
+# now we countup(n-1)
+# in this first recursion n = 2 (3-1)
+# if n == 0, it is not, so we continue
+# now we countup(n-1)
+# in this second recursion n = 1 (2-1)
+# if n == 0, it is not so we continue
+# now we countup(n-1)
+# in this third recursion n = 0 (1-1)
+# if n == 0, YES, so "Blastoff!" gets output, return None mean we don't have a value to carry thorugh
+# back to the second recursion: line 5 is solved and we can now go to line 6
+#   print n, in this recursion n was 1, so now the output is "1"
+# back to the first recursion: line 5 is solved and we can now go to line 6
+#   print n, in this recursion n was 2, so now the output is "2"
+# back to the original function: line 5 is solved and now we can go to line 6
+#   print n, in this function n was 3, so now the output is "3"
+# now we are finished witht this function
