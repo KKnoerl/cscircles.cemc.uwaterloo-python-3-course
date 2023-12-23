@@ -1,0 +1,22 @@
+code = input()                                     # first take the input
+goodList = [0]*26                                  # create an empty list for all "good" totals
+for S in range(26):                                # create a for loop to run through each S possibility
+   good = 0                                        # create an empty goodness total
+   for a in range(len(code)):                      # create a for loop to run through each letter in "code"
+      number = ord(code[a])                        # create a variable "number" to hold each letter converted to ord()
+      if ord('A') <= number <= ord('Z'):           # check our "number" lands in the ord() range of capital letters (to not change spaces)
+         number += S                               # add S to our "number"
+         if number > ord('Z'): number -= 26        # loop numbers past Z by subtracting 26
+         good += letterGoodness[number - ord('A')] # build our "good" total by adding the "letterGoodness", index found by subtracting ord(A) from our "number"
+   goodList[S] = good                              # store the final good value in our "goodList" in the position of "S", this creates a running list of "good" totals for each "S" position
+
+S = goodList.index(max(goodList))                  # the final S we want to use is the one with the max "good" value, index where that max is in our "goodList", that is our S position
+message = ""                                       # create a blank string to build the message on
+for a in range(len(code)):                         # create a for loop to run through each letter in "code" (copy from line 5)
+      number = ord(code[a])                        # create a variable "number" to hold each letter converted to ord() (copy from line 6)
+      if ord('A') <= number <= ord('Z'):           # check our "number" lands in the ord() range of capital letters (to not change spaces) (copy from line 7)
+         number += S                               # add S to our "number" (copy from line 8)
+         if number > ord('Z'): number -= 26        # loop numbers past Z by subtracting 26 (copy from line 9)
+      letter = chr(number)                         # create a variable to convert "number" back to letters
+      message += letter # build the message        # build our "message" string by concatenating each "letter"
+print(message)                                     # output the message
