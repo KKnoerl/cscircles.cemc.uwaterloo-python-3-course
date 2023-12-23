@@ -1,0 +1,25 @@
+def digitalSum(n):
+   if n < 10:
+      return n                # fix indent
+   else:                      # fix indent
+      i = digitalSum(n//10)   # create a variable "i" to hold the sum of the digits as we go
+      n %= 10                 # we need to reassign n to the remainder when divided by 10, the //10 recusion means n will run through each digit
+      i += n                  # we reassign i to be i + n, this is our running total of the digits
+      return i                # i will be the answer when recursion is finished, so that for our next n we can add it to i again.
+
+ # When you see the function call itself, make the change to n and plug the function in again.
+ # to visualize this lets use the 2019 example:
+ 
+ # in the first recursion: n = 2019, it is not < 10, so i = digitalSum(2019//10)
+ # in the second recursion: n = 201 (2019//10), it is not < 10, so i = digitalSum(201//10)
+ # in the third recursion: n = 20 (201//10), it is not < 10, so i = digitalSum(20//10)
+ # in the forth recursion: n = 2 (20//10), it IS < 10, so we return n, this is our answer to i in the third recursion
+ # back to the third recursion: we had n = 20, and now i = 2, continuing through the rest of the steps now:
+ #   n %= 10, n is 20 in this recursion so plug that in and n = 20 % 10 = 0
+ #   i += n, we just solved i in the forth recursion to be 2, so plug that in and i = 2 + 0 = 2, return i means this is our answer to the second recursion
+ # back to the second recursion: we had n = 201, and now i = 2, continuing through the rest of the steps now:
+ #   n %= 10, n is 201 in this recursion so plug that in and n = 201 % 10 = 1
+ #   i += n, we just solved i in the third recursion to be 2, so plug that in and i = 2 + 1 = 3, return i means this is our answer to the first recusion
+ # back to the first recursion: we had n = 2019, and now i = 3, continuing through the rest of the steps now:
+ #   n %= 10, n is 2019 in this recursion so plug that in and n = 2019 % 10 = 9
+ #   i += n, we just solved i in the second recursion to be 3, so plug that in and i = 3 + 9 = 12, retrurn i means this is our answer to the original function
