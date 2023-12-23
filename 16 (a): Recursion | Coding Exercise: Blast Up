@@ -1,0 +1,15 @@
+def countup(n):          # change countdown to countup
+  if n == 0:
+    print('Blastoff!')
+    return None          # add this return line, remove the else line
+  countup(n - 1)         # change countdown to countup, put in line with the if statement
+  print(n)               # move print to the bottom, put in line with the if statement
+
+  # This is a tricky one. They tell you how to start at n and take n-1, similar to a loop. 
+  # They don't tell you how to start at 0 and count up to stop at n.
+  # they show you a limit without explaining that either.
+  # They don't explain how this works or why n-1 still works for counting up. 
+
+  # I believe this works by repeating line 5: n-1 until we get the n == 0 'Blastoff!' output,
+  # Then in the next iteration it does the same but goes to n == 1 and prints n
+  # this is repeated until n = the original n
