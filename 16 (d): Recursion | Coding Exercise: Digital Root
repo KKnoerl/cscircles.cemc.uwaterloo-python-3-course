@@ -1,0 +1,5 @@
+def digitalRoot(n):                       # define our function "digitalRoot" that takes one argument "n"
+   if n < 10:                             # define our Base Case, end recursion when n < 10
+      return n                            # in this case, output n
+   else:                                  # until the Base Case is met
+      return digitalRoot(digitalSum(n))   # return digitalRoot to be the digitalSum of n
