@@ -1,0 +1,10 @@
+# Question: Unscramble the lines to create a program that produces a recursive ruler-like design.
+# Answer:
+
+def ruler(n):         # first we define the funtion "ruler" to take one argument "n"
+  if n == 1:          # when n is 1
+    print('-')        # then print "-"
+  else:               # when n is not 1
+    ruler(n - 1)      # create a recursion with n - 1 (this recursion brings n down to 1 for the first '-')(when we come out of this recursion n will be one greater each time, building up to the full n height)
+    print(n * '-')    # then print '-' the length of n (this grows the pattern, when we had n-1, just n is one greater so a line is added
+    ruler(n - 1)      # create another recursion with n - 1 (this brings n back down 1 at a time, and creats 1 less '-' )
