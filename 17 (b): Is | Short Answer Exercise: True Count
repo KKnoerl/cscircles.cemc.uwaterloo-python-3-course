@@ -1,0 +1,31 @@
+# Question: How many times does True show up in the output of this program?
+
+list1 = [9, 1, 1]
+list3 = list(list1)
+list2 = list1
+list4 = list3[:]
+list1[0] = 4
+list5 = list1
+print(list1 is list2, list2 is list3, list3 is list4, list4 is list5)
+print(list1 == list2, list2 == list3, list3 == list4, list4 == list5)
+
+# Answer: 3
+
+# list1 = [9,1,1]     # lets call this list datasetA, list1 points to datasetA
+# list3 = list(list1) # creating a list from a list creates a true copy, list3 points to datasetB
+# list2 = list1       # = will just create a pointer, list2 points to datasetA
+# list4 = list3[:]    # [:] will create a true copy, list4 points to datasetC
+# list1[0] = 4        # this will change the first value in datasetA to 4, datasetA = [4,1,1], list1 and list2 point here
+# list5 = list1       # = will just create a pointer, list5 points to datasetA 
+# outcome
+# list1 = datasetA = [4,1,1]
+# list2 = datasetA = [4,1,1]
+# list3 = datasetB = [9,1,1]
+# list4 = datasetC = [9,1,1]
+# list5 = datasetA = [4,1,1]
+
+# print(list1 is list2, list2 is list3, list3 is list4, list4 is list5) # "is" checks for same pointer (same dataset)
+# this line is: True, False, False, False
+# print(list1 == list2, list2 == list3, list3 == list4, list4 == list5) # "==" checks for same values (same contents)
+# this line is: True, False, True, False
+# total True = 3
