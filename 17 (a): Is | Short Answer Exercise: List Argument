@@ -1,0 +1,16 @@
+# Question: What number is output by the following program?
+
+def func(list):
+    list[0] = list[0] + list[1]
+    list[1] = list[1] + list[0]
+data = [3, 4]
+func(data)
+print(data[0]*data[1])
+
+# Answer: 77
+
+# data[0] starts as 3, and data[1] starts as 4
+# data gets plugged into the function as the "list argument"
+# list[0] = list[0] + list[1] will go to data[0] = 3 + 4, so now data[0] is 7
+# list[1] = list[1] + list[0] will go to data[1] = 4 + 7, so now data[1] is 11
+# print(data[0]*data[1]) will go to print(7*11), so the answer that prints is 77
