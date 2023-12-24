@@ -1,0 +1,26 @@
+# Question: What is the output of the following recursive program?
+# (GCD stands for greatest common denominator)
+
+def gcd(a, b):
+  if b == 0: return a
+  return gcd(b, a % b)
+print(gcd(20, 12))
+
+# Answer: 4
+
+# line 1 defines function "gcd" that takes two arguments "a" and "b"
+# line 4 calls this function where a is 20, and b is 12
+# line 1 becomes gcd(20, 12)
+# line 2 says if b == 0, NO
+# line 3 begins the recursion with gcd(12, 20 % 12) = gcd(12, 8)
+# first recursion: line 1 becomes gcd(12, 8)
+#    line 2: NO
+#    line 3: gcd(8, 12 % 8) = gcd(8, 4)
+# second recursion: line 1 becomes gcd(8, 4)
+#    line 2: NO
+#    line 3: gcd(4, 8 % 4) = gcd(4, 0)
+# third recursion: line 1 becomes gcd(4, 0)
+#    line 2: YES b == 0, return a, so the output is 4, 
+# there are no other steps as each of the recursions end so our output comes through to the end
+#    original return (first return (second return (third return (4))))
+# print(4)
