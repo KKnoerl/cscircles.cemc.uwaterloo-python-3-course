@@ -1,0 +1,7 @@
+def nestedListContains(NL, target):                                # define the function "nestedListContains" to take two arguments "NL" and "target"
+   if isinstance(NL, int):                                         # if the NL is an int 
+      if NL == target: return True                                 # and if that integer is equal to the target: output "True"
+      else: return NL                                              # otherwise, keep the NL value
+   for i in range(0,len(NL)):                                      # if NL is not an int, assume a list: set a variable to run through the positions in the range of the NL
+      if nestedListContains(NL[i], target) == True: return True    # set a recursion to run through each i value. change NL to NL[i], this is what checks for additional lists until NL is int
+   else: return False                                              # when nothing returns True, return False
