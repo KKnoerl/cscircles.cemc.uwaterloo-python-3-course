@@ -1,0 +1,5 @@
+def hailstone(n):                           # we start by defining our function "hailstone" to take one argument "n"
+   print(int(n))                            # we want to print each value for n as an int()
+   if n == 1: return None                   # our Base Case to end the recursion is when n == 1
+   elif n % 2 == 0: return hailstone(n/2)   # otherwise if n is divisible by 2 (even), run another recursion with n/2
+   else: return hailstone(3*n+1)            # otherwise (odd), run another recursion with 3*n+1
