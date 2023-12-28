@@ -1,0 +1,5 @@
+def Fibonacci(n):                                     # define our function "Fibonacci" to take one argument "n"
+  sequence = [0, 1, 1]                                # create a list of the sequence to cut down on recursion
+  for i in range(3,n+1):                              # create a for loop to run through list position 3 to n (end ranges are exclusive, we need one higher to include n)
+    sequence.append(sequence[i-1] + sequence[i-2])    # append our list with the sequence number 1 before and 2 before i
+  return sequence[n]                                  # end with the sequence value in position n
