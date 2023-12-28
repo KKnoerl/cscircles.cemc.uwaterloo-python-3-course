@@ -1,0 +1,5 @@
+def Fibonacci(n):                              # define our function "Fibonacci" to take one argument "n"
+  if (n==1 or n==2):                           # decribe our "Base Case"
+    return 1                                   # describe the result of the "Base Case"
+  else:                                        # when not the "Base Case"
+    return Fibonacci(n-1) + Fibonacci(n-2)     # recursion formula
