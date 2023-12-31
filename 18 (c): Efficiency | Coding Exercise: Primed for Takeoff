@@ -1,0 +1,9 @@
+n = 1000000                                            # The number we want the list to go to 
+n += 1                                                 # add 1 because zero counts and because using n as an end range is exclusive (you can skip this by just adding 1 to the first line)
+isPrime = [True] * n                                   # create your list "isPrime" starting with all True values the length of n
+
+for D in range(0,int(n**0.5)+1):                       # create a for loop where a variable "D" runs through the list, stopping at the integer of the squareroot of n (**0.5) +1 (+1 for if n is prime)
+   if D < 2: isPrime[D] = False                        # when D is less than 2, set isPrime to False. The question specifies 0 and 1 should be False
+   if isPrime[D] == True:                              # Then when D encounters the next True value in the list
+      for i in range(2*D,n,D): isPrime[i] = False      # create a for loop that changes multiples of that prime number to False. 
+                                                       # Starting with 2*D (to exclude D), going thorugh the full list (n), count by D and make everything False
